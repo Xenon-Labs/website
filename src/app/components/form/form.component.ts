@@ -17,7 +17,7 @@ export class FormComponent implements OnInit {
 
   ngOnInit() {
     const contactForm =  document.getElementById('contactForm');
-    contactForm.setAttribute('action', 'https://formspree.io/' + 'info.xenonlabs' + '@' + 'gmail' + '.' + 'com');
+    contactForm.setAttribute('action', 'https://formspree.io/' + 'contact' + '@' + 'xenonlabs' + '.' + 'ca');
   }
 
   onSubmit() { }
