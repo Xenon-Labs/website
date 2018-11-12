@@ -20,8 +20,4 @@ export class FormComponent implements OnInit {
     contactForm.setAttribute('action', 'https://formspree.io/' + 'info.xenonlabs' + '@' + 'gmail' + '.' + 'com');
   }
 
-  onSubmit(e: any) {
-    console.log(e.target.action);
-  }
-
 }
