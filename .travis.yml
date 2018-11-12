@@ -13,7 +13,7 @@ cache:
     - node_modules
 
 install:
-  - npm install -g yarn
+  - npm install -g angular-cli
 
 script:
   - npm run-script build
