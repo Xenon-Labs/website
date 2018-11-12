@@ -54,7 +54,7 @@ export class AppComponent implements OnInit {
 
       // Smooth scrolling using jQuery easing
       $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function (e) {
-        e.preventDefault();
+        e.stopPropagation();
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
           let target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -70,7 +70,7 @@ export class AppComponent implements OnInit {
 
       // Closes responsive menu when a scroll trigger link is clicked
       $('.js-scroll-trigger').click(function (e) {
-        e.preventDefault();
+        e.stopPropagation();
         $('.navbar-collapse').collapse('hide');
       });
 
