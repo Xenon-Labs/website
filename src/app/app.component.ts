@@ -64,7 +64,6 @@ export class AppComponent implements OnInit {
             return false;
           }
         }
-        return false;
       });
 
       // Closes responsive menu when a scroll trigger link is clicked
