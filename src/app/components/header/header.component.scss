@@ -1,5 +1,4 @@
 @import '../../../variables.scss';
-
 // After scrolling
 .navbar-shrink {
     background: $color-primary;
@@ -36,10 +35,20 @@
     padding-right: 1em;
 }
 
+.navbar-toggler {
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .fa-bars {
     display: none;
 }
 
 .navbar-shrink .fa-bars {
     display: block;
+}
+
+.navbar-shrink .navbar-toggler {
+    visibility: visible;
+    pointer-events: auto;
 }
