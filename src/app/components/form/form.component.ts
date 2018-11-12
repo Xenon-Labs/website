@@ -8,7 +8,10 @@ import { Component, OnInit, Input, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class FormComponent implements OnInit {
-
+  name: String = '';
+  _replyto: String = '';
+  phone: String = '';
+  message: String = '';
   @Input() title = '';
 
 
