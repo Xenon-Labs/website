@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 declare var $: any;
 
@@ -7,7 +7,7 @@ declare var $: any;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
   title = 'NoNameBrand';
 
   home_links = [
@@ -48,7 +48,13 @@ export class AppComponent implements OnInit {
     }
   ];
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  ngAfterViewInit() {
+    this.grayscaleJS();
+  }
+
+  grayscaleJS() {
     // JQuery stuff from Grayscale.js
     $(document).ready(function () {
 

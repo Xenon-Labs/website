@@ -26,6 +26,10 @@ export class FormComponent implements OnInit {
     });
   }
 
+  onSubmit() {
+    // console.log('submitting');
+  }
+
 
 
 
