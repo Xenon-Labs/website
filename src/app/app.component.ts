@@ -51,12 +51,10 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     // JQuery stuff from Grayscale.js
     $(document).ready(function () {
-      $('a').click(function () {
-        return false;
-      });
 
       // Smooth scrolling using jQuery easing
-      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+      $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function (e) {
+        e.preventDefault();
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
           let target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -67,10 +65,12 @@ export class AppComponent implements OnInit {
             return false;
           }
         }
+        return false;
       });
 
       // Closes responsive menu when a scroll trigger link is clicked
-      $('.js-scroll-trigger').click(function () {
+      $('.js-scroll-trigger').click(function (e) {
+        e.preventDefault();
         $('.navbar-collapse').collapse('hide');
       });
 
