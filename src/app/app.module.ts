@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './libs/material.module';
-import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -23,14 +22,12 @@ import { SkillsComponent } from './components/skills/skills.component';
   imports: [
     BrowserModule,
     MaterialModule,
-    AppRoutingModule,
     FormsModule
   ],
   providers: [],
   exports: [
     BrowserModule,
     MaterialModule,
-    AppRoutingModule,
     FormsModule
   ],
   bootstrap: [AppComponent]
