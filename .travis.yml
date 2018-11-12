@@ -12,11 +12,11 @@ cache:
   directories:
     - node_modules
 
-install:
-  - npm install -g yarn
+before_script:
+  - npm install -g @angular/cli
 
 script:
-  - ng build --prod --base-href \"https://Xenon-Labs.github.io/website/\" && echo xenonlabs.ca > dist/consulting-web-app/CNAME
+  - npm run-script build
 deploy:
   provider: pages
   skip_cleanup: true

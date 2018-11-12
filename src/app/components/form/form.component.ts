@@ -22,7 +22,7 @@ export class FormComponent implements OnInit {
 
     $(document).ready(function() {
       const contactForm =  document.getElementById('contactForm');
-      contactForm.setAttribute('action', 'https://formspree.io/' + 'xenon' + '@' + 'hotmail' + '.' + 'com');
+      contactForm.setAttribute('action', 'https://formspree.io/' + 'info.xenonlabs' + '@' + 'gmail' + '.' + 'com');
     });
   }
 
