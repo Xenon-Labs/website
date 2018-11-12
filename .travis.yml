@@ -16,7 +16,7 @@ install:
   - npm install -g yarn
 
 script:
-  - yarn build --prod --base-href \"https://Xenon-Labs.github.io/website/\" && echo xenonlabs.ca > dist/consulting-web-app/CNAME
+  - npm build --prod --base-href \"https://Xenon-Labs.github.io/website/\" && echo xenonlabs.ca > dist/consulting-web-app/CNAME
 deploy:
   provider: pages
   skip_cleanup: true

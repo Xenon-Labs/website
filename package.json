@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "build": "ng build --prod --base-href \"https://Xenon-Labs.github.io/website/\" && echo xenonlabs.ca > dist/consulting-web-app/CNAME",
+    "deploy": "npx ngh --branch=\"gh-pages\" --dir=dist/consulting-web-app",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
