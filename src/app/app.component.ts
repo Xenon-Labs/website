@@ -51,6 +51,10 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     // JQuery stuff from Grayscale.js
     $(document).ready(function () {
+      $('a').click(function () {
+        return false;
+      });
+
       // Smooth scrolling using jQuery easing
       $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
         if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
