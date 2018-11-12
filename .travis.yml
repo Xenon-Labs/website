@@ -17,10 +17,4 @@ before_script:
 
 script:
   - npm run-script build
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist/consulting-web-app
-  on:
-    branch: master
+  - npm run-script deploy
