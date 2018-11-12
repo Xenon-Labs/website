@@ -60,7 +60,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
       // Smooth scrolling using jQuery easing
       $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function (e) {
-        if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+        // if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
           let target = $(this.hash);
           target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
           if (target.length) {
@@ -69,7 +69,7 @@ export class AppComponent implements OnInit, AfterViewInit {
             }, 1000, 'easeInOutExpo');
             return false;
           }
-        }
+        // }
       });
 
       // Closes responsive menu when a scroll trigger link is clicked
