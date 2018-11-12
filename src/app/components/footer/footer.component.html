@@ -1,0 +1,28 @@
+<div class="footer-wrapper">
+  <div class="row content">
+    <div class="col-md-5 footer-ls">
+      <ul class="footer-ls__links">
+        <li *ngFor="let link of home_links" class="footer-ls__link-item">
+          <a [href]="link.link" class="js-scroll-trigger">{{ link.title }}</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-5 footer-rs">
+      <ul class="footer-rs__links">
+        <li *ngFor="let link of social_links" class="footer-rs__link-item">
+          <a [href]="link.link"><span [class]="link.icon"></span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-5"></div>
+    <div class="logo col-md-2 text-center">
+      <div class="circle">
+        <a href="#home" class="js-scroll-trigger">X</a>
+      </div>
+    </div>
+    <div class="col-md-5"></div>
+  </div>
+
+</div>

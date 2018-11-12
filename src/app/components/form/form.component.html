@@ -1,0 +1,32 @@
+<div class="wrapper">
+    <div class="container">
+        <form #contactForm="ngForm" id="contactForm" method="POST">
+            <h2>{{ title }}</h2>
+            <div class="row">
+                <mat-form-field>
+                    <input matInput required placeholder="Name" [(ngModel)]="name" name="name" />
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field>
+                    <input matInput required placeholder="Email" [(ngModel)]="_replyto" name="_replyto" />
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field>
+                    <input matInput placeholder="Phone" [(ngModel)]="phone" name="phone" />
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <mat-form-field>
+                    <textarea matInput required placeholder="Message" [(ngModel)]="message" name="message"></textarea>
+                </mat-form-field>
+            </div>
+            <div class="row">
+                <button mat-raised-button class="submit-button" type="submit" name="submit" [disabled]="contactForm.form.invalid">Send Message</button>
+            </div>
+            <input type="hidden" name="_subject" value="Xenon Labs Website Contact" />
+            <input type="text" name="_gotcha" style="display:none" />
+        </form>
+    </div>
+</div>

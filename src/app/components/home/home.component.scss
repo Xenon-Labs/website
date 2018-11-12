@@ -1,0 +1,102 @@
+@import '../../../variables.scss';
+$background-color: rgb(55, 83, 164);
+
+
+@media(min-width:801px){
+    .landing-heading {
+        font-size: 5vw;
+        color: white;
+        text-shadow: black;
+        letter-spacing: 0.5em;
+        top:45%;
+        left:23%;
+        right:17%;
+        position: fixed;
+    }
+}
+
+@media (max-width: 800px) {
+    .landing-heading {
+        font-size: 9vw;
+        color: white;
+        text-shadow: black;
+        letter-spacing: 0.4em;
+        top:45%;
+        left:11%;
+        right:2%;
+        position: fixed;
+    }
+}
+
+.body-wrapper {
+    position: relative;
+    letter-spacing: 2px;
+
+    .bgimg-1 {
+        padding-top: 500px;
+        padding-bottom: 500px;
+        filter: brightness(20%);
+        background-image: url('/assets/images/doMoreMac.jpg');
+    }
+    .parrallax {
+        min-height: 100%;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .subsecPadding {
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+        position: relative;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .whiteSection.subsecPadding {
+        color: black;
+        background-color: white;
+    }
+    .animated {
+        // background-image: url(/css/images/logo.png);
+        background-repeat: no-repeat;
+        background-position: left top;
+        padding-top: 95px;
+        margin-bottom: 60px;
+        -webkit-animation-duration: 3s;
+        animation-duration: 3;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-family: $font-familyReg;
+    font-weight: 400;
+}

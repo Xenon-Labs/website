@@ -1,0 +1,25 @@
+/* Global Styles */
+@import './variables.scss';
+
+html,
+body {
+  font-family: $font-familyReg !important;
+  font-weight: 400 !important;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-family: $font-familyReg !important;
+  font-weight: 400 !important;
+}
+
+h2 {
+  font-size: $font-sizeHeader !important;
+  font-weight: 400 !important;
+}
+
+.body-wrapper {
+  min-height: 100%;
+  margin: 0;
+}

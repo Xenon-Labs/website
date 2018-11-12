@@ -1,0 +1,10 @@
+<div class="wrapper parrallax bgimg-2">
+  <div class="container">
+    <h2 class="title">{{ title }}</h2>
+    <div class="row">
+      <div *ngFor="let skill of skills" class="col-md-4 skill-item animation-element slide-left">
+        <div class="circle"><span [class]="skill.icon"></span></div>
+        <p class="skill-title">{{ skill.title }}</p>
+      </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+@import '../../../variables.scss';
+
+// After scrolling
+.navbar-shrink {
+    background: $color-primary;
+    border-bottom: solid 1px $color-accent;
+    transition: 0.5s;
+}
+
+// Logo Text
+.navbar-brand {
+    //color: $color-accent;
+    display: none;
+}
+
+// Active Links in Navbar
+.navbar-light .navbar-nav .nav-link {
+    display: none;
+}
+
+.navbar-shrink .navbar-brand {
+    display: block;
+    color: black;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+}
+
+.navbar-shrink.navbar-light .navbar-nav .nav-link {
+    display: block;
+    color: black;
+    letter-spacing: 0.3em;
+}
+
+.nav-item {
+    text-transform: uppercase;
+    padding-right: 1em;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.navbar-shrink .fa-bars {
+    display: block;
+}

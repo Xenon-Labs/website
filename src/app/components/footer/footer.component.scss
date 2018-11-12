@@ -1,0 +1,179 @@
+@import '../../../variables.scss';
+
+// Footer Colors
+$background-color: white;
+$font-color: black;
+
+img {
+  width: 46px;
+  height: auto;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  /* msie */
+  border-radius: 20%;
+  margin-bottom: 14px;
+
+  &:hover {
+    transition: 0.5s;
+    opacity: 1;
+  }
+}
+
+.circle {
+  margin: auto;
+  border: solid 1px #ddd;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+
+  &:hover {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  a {
+    height: 75px;
+    width: 75px;
+    font-size: 3em;
+    color: black;
+    opacity: 0.4;
+    text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3), 1px 1px 0px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.footer-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+  padding-top: 50px;
+  background: $background-color;
+  color: $font-color;
+  border: solid 1px transparent;
+  background: $background-footer;
+  border: $border-footer;
+
+  // Footer - Left Side
+  .footer-ls {
+    height: 100%;
+
+    .footer-ls__links {
+      list-style: none;
+      text-align: center;
+      padding: 0;
+
+      .footer-ls__link-item {
+        margin-top: 5px;
+        font-size: 16px;
+
+        a {
+          color: $color-idle;
+          padding-left: 10px;
+          white-space: nowrap;
+
+          &:hover {
+            border-left: solid 2px $color-accent;
+            color: $color-accent;
+            font-size: 15px;
+            text-decoration: none;
+            transition: none;
+          }
+        }
+      }
+    }
+
+  }
+
+  // Footer - Right Side
+  .footer-rs {
+    height: 100%;
+    float: left;
+
+    // Right Side Title
+    .footer-rs__title {
+      font-size: 16px;
+      padding-left: 10px;
+    }
+
+    // List of Links
+    .footer-rs__links {
+      margin-top: 5px;
+      display: flex;
+      list-style: none;
+      justify-content: center;
+      padding-left: 10px;
+
+      .footer-rs__link-item {
+        text-align: center;
+        margin-right: 10px;
+
+        // Link
+        a:hover {
+          text-decoration: none;
+        }
+
+        // Wrapper around Font-Awesome-Icon
+        span {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 0;
+          height: 25px;
+          width: 25px;
+
+          // Font Awesome Icon
+          &.fa {
+            color: $color-idle;
+            font-size: 2em;
+
+            &:hover {
+              font-size: 1.9em;
+            }
+
+            // Twitter
+            &.fa-twitter-square {
+              &:hover {
+                color: $twitter-color;
+                border-color: $twitter-color;
+              }
+            }
+
+            // Facebook
+            &.fa-facebook-square {
+              &:hover {
+                color: $facebook-color;
+                border-color: $facebook-color;
+              }
+            }
+
+            // LinkedIn
+            &.fa-linkedin-square {
+              &:hover {
+                color: $linkedin-color;
+                border-color: $linkedin-color;
+              }
+            }
+
+            // Instagram
+            &.fa-instagram {
+              &:hover {
+                color: $instagram-color;
+                border-color: $instagram-color;
+              }
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  margin-top: 50px;
+
+  .col-md-6 {
+    text-align: center;
+  }
+}

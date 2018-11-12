@@ -1,0 +1,59 @@
+@import '../../../variables.scss';
+@import '../../../theme.scss';
+.wrapper {
+    padding: 10% 0;
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+}
+
+.row {
+    justify-content: center;
+    margin: auto;
+}
+
+mat-form-field {
+    width: 50%;
+}
+
+::ng-deep .mat-input-underline {
+    border-bottom: 1px solid black;
+}
+
+button:focus {
+    outline: none;
+}
+
+.submit-button {
+    border: solid 1px $color-primary;
+    background: $color-accent;
+    font-weight: 600;
+    color: $color-primary;
+    cursor: pointer;
+    &:disabled {
+        cursor: not-allowed;
+        background-color: $border-color-light;
+    }
+    &:not([disabled]) {
+        &:hover {
+            background-color: $color-primary;
+            border-color: $color-accent;
+            color: $color-accent;
+        }
+        &:focus {
+            outline: none;
+            background-color: $color-primary;
+            border-color: $color-accent;
+            color: $color-accent;
+        }
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-family: $font-familyReg;
+    font-weight: 400;
+}
