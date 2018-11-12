@@ -16,21 +16,12 @@ export class FormComponent implements OnInit {
 
 
   ngOnInit() {
-    /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-    // @ts-ignore
-    // particlesJS.load('particles-js', 'assets/particles/particles.json', function() { });
-
-    $(document).ready(function() {
-      const contactForm =  document.getElementById('contactForm');
-      contactForm.setAttribute('action', 'https://formspree.io/' + 'info.xenonlabs' + '@' + 'gmail' + '.' + 'com');
-    });
+    const contactForm =  document.getElementById('contactForm');
+    contactForm.setAttribute('action', 'https://formspree.io/' + 'info.xenonlabs' + '@' + 'gmail' + '.' + 'com');
   }
 
-  onSubmit() {
-    // console.log('submitting');
+  onSubmit(e: any) {
+    console.log(e.target.action);
   }
-
-
-
 
 }

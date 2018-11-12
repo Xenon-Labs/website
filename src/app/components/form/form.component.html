@@ -1,6 +1,6 @@
 <div class="wrapper">
     <div class="container">
-        <form #contactForm="ngForm" id="contactForm" method="POST" (ngSubmit)="onSubmit()">
+        <form #contactForm="ngForm" id="contactForm" method="POST" (submit)="onSubmit();">
             <h2>{{ title }}</h2>
             <div class="row">
                 <mat-form-field>
@@ -24,7 +24,6 @@
             </div>
             <div class="row">
                 <input type="hidden" name="_subject" value="Xenon Labs Website Contact" />
-                <input type="text" name="_gotcha" style="display:none" />
                 <button mat-raised-button class="submit-button" type="submit" name="submit" [disabled]="contactForm.form.invalid">Send Message</button>
             </div>
         </form>
