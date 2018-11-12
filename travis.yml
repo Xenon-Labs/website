@@ -1,32 +1,26 @@
-sudo: false
-dist: trusty
 language: node_js
+node_js:
+  - "9"
+dist: trusty
+sudo: false
+
+branches:
+  only:
+  - master
 
 cache:
   directories:
     - node_modules
 
-addons:
-  chrome: stable
-
-node_js:
-  - "6"
-  - "7"
-  - "8"
-
-matrix:
-  fast_finish: true
-
-before_install:
-  - npm install npm@5 -g
-  - npm cache verify
-  - npm prune
-  - npm update
-
 install:
-  - npm install
+  - npm install -g yarn
 
 script:
-  - ng build --prod --base-href \"https://Xenon-Labs.github.io/website/\" 
-  - echo xenonlabs.ca > dist/consulting-web-app/CNAME
-  - npx ngh --branch=\"gh-pages\" --dir=dist/consulting-web-app
+  - ng build --prod --base-href \"https://Xenon-Labs.github.io/website/\" && echo xenonlabs.ca > dist/consulting-web-app/CNAME
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/consulting-web-app
+  on:
+    branch: master
