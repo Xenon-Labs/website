@@ -70,15 +70,19 @@ img {
 
         a {
           color: $color-idle;
-          // padding-left: 10px;
+           padding-left: 10px;
           white-space: nowrap;
+          padding-right: 10px;
+
 
           &:hover {
-            // border-left: solid 2px $color-accent;
+            border-left: solid 2px $color-accent;
             color: $color-accent;
             font-size: 15px;
             text-decoration: none;
             transition: none;
+            padding-right: 13px;
+
           }
         }
       }
@@ -108,6 +112,8 @@ img {
       .footer-rs__link-item {
         text-align: center;
         margin-right: 10px;
+        padding-right: 10px;
+
         
 
         // Link
