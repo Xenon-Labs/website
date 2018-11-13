@@ -52,7 +52,29 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.grayscaleJS();
+    this.landingPage();
   }
+
+  landingPage() {
+    $(document).ready(function () {
+      //landing page background size
+      $("#home ").css({
+        'padding-top': $(window).height() / 2,
+        'padding-bottom': $(window).height() / 2
+
+      });
+
+    });
+
+    $(window).resize(function(){
+      $("#home ").css({
+        'padding-top': $(window).height() / 2,
+        'padding-bottom': $(window).height() / 2
+
+      });
+    });
+  }
+
 
   grayscaleJS() {
     // JQuery stuff from Grayscale.js
