@@ -16,7 +16,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       link: '#about'
     },
     {
-      title: 'Skills',
+      title: 'Services',
       link: '#skills'
     },
     {
