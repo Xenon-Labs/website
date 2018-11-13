@@ -1,16 +1,14 @@
 @import '../../../variables.scss';
 $background-color: rgb(55, 83, 164);
-
-
-@media(min-width:801px){
+@media(min-width:801px) {
     .landing-heading {
         font-size: 5vw;
         color: white;
         text-shadow: black;
         letter-spacing: 0.5em;
-        top:45%;
-        left:23%;
-        right:17%;
+        top: 45%;
+        left: 23%;
+        right: 17%;
         position: fixed;
     }
 }
@@ -21,9 +19,9 @@ $background-color: rgb(55, 83, 164);
         color: white;
         text-shadow: black;
         letter-spacing: 0.4em;
-        top:45%;
-        left:11%;
-        right:2%;
+        top: 45%;
+        left: 11%;
+        right: 2%;
         position: fixed;
     }
 }
@@ -31,7 +29,6 @@ $background-color: rgb(55, 83, 164);
 .body-wrapper {
     position: relative;
     letter-spacing: 2px;
-
     .bgimg-1 {
         padding-top: 500px;
         padding-bottom: 500px;
@@ -39,14 +36,13 @@ $background-color: rgb(55, 83, 164);
         background-image: url('/assets/images/doMoreMac.jpg');
     }
     .parrallax {
-        min-height: 100%;
+        height: 100%;
         background-size: cover;
         position: relative;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;
     }
-
     .subsecPadding {
         padding-left: 15%;
         padding-right: 15%;
@@ -56,7 +52,6 @@ $background-color: rgb(55, 83, 164);
         text-align: center;
         vertical-align: top;
     }
-
     .whiteSection.subsecPadding {
         color: black;
         background-color: white;
