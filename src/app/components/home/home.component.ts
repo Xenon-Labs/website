@@ -27,6 +27,14 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() { }
+  ngOnInit() {
+    $("#home").css({
+
+      'padding-top': $(this).height() * 1.3
+      'padding-bottom': $(this).height() * 1.3
+
+
+  });
+   }
 
 }
