@@ -70,11 +70,11 @@ img {
 
         a {
           color: $color-idle;
-          padding-left: 10px;
+          // padding-left: 10px;
           white-space: nowrap;
 
           &:hover {
-            border-left: solid 2px $color-accent;
+            // border-left: solid 2px $color-accent;
             color: $color-accent;
             font-size: 15px;
             text-decoration: none;
@@ -108,12 +108,15 @@ img {
       .footer-rs__link-item {
         text-align: center;
         margin-right: 10px;
+        
 
         // Link
         a:hover {
           text-decoration: none;
+          
         }
 
+  
         // Wrapper around Font-Awesome-Icon
         span {
           display: table-cell;
