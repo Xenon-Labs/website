@@ -1,40 +1,47 @@
 @import '../../../variables.scss';
 $background-color: rgb(55, 83, 164);
-@media(min-width:801px) {
-    .landing-heading {
-        font-size: 5vw;
-        color: white;
-        text-shadow: black;
-        letter-spacing: 0.5em;
-        top: 45%;
-        left: 23%;
-        right: 17%;
-        position: fixed;
-    }
-}
 
-@media (max-width: 800px) {
+#home {
+    padding-top: 500px;
+    padding-bottom: 500px;
+
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('/assets/images/doMoreMac.jpg');
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+ @media screen and (max-width: 992px) {
     .landing-heading {
-        font-size: 9vw;
+        font-size: 11vw;
         color: white;
         text-shadow: black;
         letter-spacing: 0.4em;
-        top: 45%;
-        left: 11%;
-        right: 2%;
-        position: fixed;
+        text-align: center;
+        position: relative;
+        margin-right: -.4em;
+    }
+ }
+ @media  screen and  (min-width: 992px) {
+    .landing-heading {
+        font-size: 7vw;
+        color: white;
+        text-shadow: black;
+        letter-spacing: 0.4em;
+        text-align: center;
+        position: relative;
+        margin-right: -.4em;
     }
 }
+
+
+
 
 .body-wrapper {
     position: relative;
     letter-spacing: 2px;
-    .bgimg-1 {
-        padding-top: 500px;
-        padding-bottom: 500px;
-        filter: brightness(20%);
-        background-image: url('/assets/images/doMoreMac.jpg');
-    }
+
     .parrallax {
         height: 100%;
         background-size: cover;
@@ -42,7 +49,6 @@ $background-color: rgb(55, 83, 164);
         position: relative;
         background-position: center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
     }
     .subsecPadding {
         padding-left: 15%;
@@ -58,7 +64,6 @@ $background-color: rgb(55, 83, 164);
         background-color: white;
     }
     .animated {
-        // background-image: url(/css/images/logo.png);
         background-repeat: no-repeat;
         background-position: left top;
         margin-bottom: 60px;
