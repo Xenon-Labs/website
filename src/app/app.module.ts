@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FormComponent } from './components/form/form.component';
 import { SkillsComponent } from './components/skills/skills.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,13 +23,13 @@ import { SkillsComponent } from './components/skills/skills.component';
   imports: [
     BrowserModule,
     MaterialModule,
-    FormsModule
+    ReactiveFormsModule
   ],
   providers: [],
   exports: [
     BrowserModule,
     MaterialModule,
-    FormsModule
+    ReactiveFormsModule
   ],
   bootstrap: [AppComponent]
 })

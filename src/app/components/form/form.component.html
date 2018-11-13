@@ -1,31 +1,32 @@
 <div class="wrapper">
     <div class="container">
-        <form  ngNoForm id="contactForm" method="POST" >
+        <form ngNoForm id="contactForm" method="POST">
             <h2>{{ title }}</h2>
             <div class="row">
                 <mat-form-field>
-                    <input matInput required placeholder="Name" [(ngModel)]="name" name="name" />
+                    <input matInput required placeholder="Name" name="name" (input)="onNameChange($event.target.value)" />
                 </mat-form-field>
             </div>
             <div class="row">
                 <mat-form-field>
-                    <input matInput required placeholder="Email" [(ngModel)]="_replyto" name="_replyto" />
+                    <input matInput required placeholder="Email" name="_replyto" (input)="onMailChange($event.target.value)"/>
                 </mat-form-field>
             </div>
             <div class="row">
                 <mat-form-field>
-                    <input matInput placeholder="Phone" [(ngModel)]="phone" name="phone" />
+                    <input matInput placeholder="Phone" name="phone"/>
                 </mat-form-field>
             </div>
             <div class="row">
                 <mat-form-field>
-                    <textarea matInput required placeholder="Message" [(ngModel)]="message" name="message"></textarea>
+                    <textarea matInput required placeholder="Message" name="message" (input)="onMessageChange($event.target.value)"></textarea>
                 </mat-form-field>
             </div>
             <div class="row">
                 <input type="hidden" name="_subject" value="Xenon Labs Website Contact" />
                 <input type="text" name="_gotcha" style="display:none" />
-                <button mat-raised-button class="submit-button" type="submit" name="submit" [disabled]="contactForm.form.invalid">Send Message</button>
+                <button mat-raised-button class="submit-button" type="submit" name="submit" 
+                        [disabled]="submitDisabled">Send Message</button>
             </div>
         </form>
     </div>
