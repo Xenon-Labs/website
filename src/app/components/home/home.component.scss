@@ -41,14 +41,7 @@ $background-color: rgb(55, 83, 164);
 .body-wrapper {
     position: relative;
     letter-spacing: 2px;
-    // .bgimg-1 {
-    //     padding-top: 500px;
-    //     padding-bottom: 500px;
-    //     // filter: brightness(20%);
-    //     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/assets/images/doMoreMac.jpg');
 
-    //     // background-image: url('/assets/images/doMoreMac.jpg');
-    // }
     .parrallax {
         height: 100%;
         background-size: cover;
@@ -71,7 +64,6 @@ $background-color: rgb(55, 83, 164);
         background-color: white;
     }
     .animated {
-        // background-image: url(/css/images/logo.png);
         background-repeat: no-repeat;
         background-position: left top;
         margin-bottom: 60px;
