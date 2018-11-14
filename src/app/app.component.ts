@@ -16,7 +16,7 @@ export class AppComponent implements OnInit, AfterViewInit {
       link: '#about'
     },
     {
-      title: 'Services',
+      title: 'What We Build',
       link: '#skills'
     },
     {
@@ -26,25 +26,25 @@ export class AppComponent implements OnInit, AfterViewInit {
   ];
 
   social_links = [
-    {
-      title: 'Twitter',
-      icon: 'fa fa-twitter-square',
-      link: 'https://twitter.com'
-    },
-    {
-      title: 'LinkedIn',
-      icon: 'fa fa-linkedin-square',
-      link: 'https://linkedin.com'
-    },
+    // {
+    //   title: 'Twitter',
+    //   icon: 'fa fa-twitter-square',
+    //   link: 'https://twitter.com'
+    // },
+    // {
+    //   title: 'LinkedIn',
+    //   icon: 'fa fa-linkedin-square',
+    //   link: 'https://linkedin.com'
+    // },
     {
       title: 'Facebook',
       icon: 'fa fa-facebook-square',
-      link: 'https://facebook.com'
+      link: 'https://www.facebook.com/Xenon-Labs-302160900396600/'
     },
     {
       title: 'Instagram',
       icon: 'fa fa-instagram',
-      link: 'https://instagram.com'
+      link: 'https://www.instagram.com/xenon_labs/'
     }
   ];
 
@@ -59,7 +59,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     $(document).ready(function () {
       //landing page background size
       $("#home ").css({
-        'padding-top': $(window).height() / 2,
+        'padding-top': $(window).height() / 2.3,
         'padding-bottom': $(window).height() / 2
 
       });

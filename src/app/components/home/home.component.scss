@@ -14,7 +14,7 @@ $background-color: rgb(55, 83, 164);
   }
  @media screen and (max-width: 992px) {
     .landing-heading {
-        font-size: 11vw;
+        font-size: 12vw;
         color: white;
         text-shadow: black;
         letter-spacing: 0.4em;
@@ -41,6 +41,8 @@ $background-color: rgb(55, 83, 164);
 .body-wrapper {
     position: relative;
     letter-spacing: 2px;
+    margin-right: -2px;
+
 
     .parrallax {
         height: 100%;
@@ -99,4 +101,6 @@ h2 {
     letter-spacing: 0.2em;
     font-family: $font-familyReg;
     font-weight: 400;
+    margin-right: -0.2em;
+
 }

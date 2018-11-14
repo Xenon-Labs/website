@@ -7,18 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  skills_title: String = 'Services';
+  skills_title: String = 'What We Build';
   skills = [
     {
-      title: 'Android Development',
+      title: 'Android Applications',
       icon: 'fa fa-android fa-3x'
     },
     {
-      title: 'iOS Development',
+      title: 'iOS Applications',
       icon: 'fa fa-apple fa-3x'
     },
     {
-      title: 'Web Development',
+      title: 'Web Applications',
       icon: 'fa fa-code fa-3x'
     }
   ];
