@@ -5,12 +5,14 @@ $background-color: rgb(55, 83, 164);
     padding-top: 500px;
     padding-bottom: 500px;
 
-    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('/assets/images/doMoreMac.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('/assets/images/doMoreMacOpt.jpg');
     height: 100%;
     background-size: cover;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
+
+
   }
  @media screen and (max-width: 992px) {
     .landing-heading {
@@ -19,8 +21,11 @@ $background-color: rgb(55, 83, 164);
         text-shadow: black;
         letter-spacing: 0.4em;
         text-align: center;
-        position: relative;
         margin-right: -.4em;
+    }
+
+    #home{
+        background-attachment: scroll;
     }
  }
  @media  screen and  (min-width: 992px) {
@@ -30,8 +35,11 @@ $background-color: rgb(55, 83, 164);
         text-shadow: black;
         letter-spacing: 0.4em;
         text-align: center;
-        position: relative;
         margin-right: -.4em;
+    }
+
+    #home{
+        background-attachment: fixed;
     }
 }
 
