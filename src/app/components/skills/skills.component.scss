@@ -1,7 +1,6 @@
 @import '../../../variables.scss';
 
 .wrapper {
-  color: white;
   width: 100%;
   padding: 10% 0;
   text-align: center;
@@ -20,6 +19,13 @@
   }
 }
 
+.textcolorWhite{
+  color:white; 
+}
+
+.textcolorBlack{
+  color:black; 
+}
 h2 {
   text-transform: uppercase;
   letter-spacing: 0.2em;
