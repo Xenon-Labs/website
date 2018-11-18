@@ -4,7 +4,7 @@
       <div class="row">
         <div *ngFor="let process of processes" class="col-md-3 skill-item animation-element slide-left">
           <div ><span [class]="process.icon"></span></div>
-          <p class="skill-title">{{process.title}}</p>
+          <p class="skill-title">{{process.title | uppercase}}</p>
         </div>
       </div>
   </div>
