@@ -23,26 +23,26 @@ export class HomeComponent implements OnInit {
     }
   ];
 
-  process_title: String = "Our Process";
+  process_title: String = 'Our Process';
 
   processes = [
     {
       title: 'Determine Requirments',
-      icon: 'fa fa-3x fa-list-ul'
+      icon: 'fa fa-list-ul fa-3x '
     },
     {
       title: 'Build Product',
-      icon: 'fa fa-3x  fa-laptop-code'
+      icon: 'fas fa-laptop-code fa-3x '
     },
     {
       title: 'Review/Fix',
-      icon: 'fa fa-3x fa-screwdriver'
+      icon: 'fas fa-screwdriver fa-3x'
     },
     {
       title: 'Launch',
-      icon: 'fa fa-3x fa-rocket'
+      icon: 'fa fa-rocket fa-3x'
     }
-  ]
+  ];
 
   contact_title: String = 'CONTACT US';
 

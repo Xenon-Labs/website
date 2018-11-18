@@ -57,8 +57,8 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   landingPage() {
     $(document).ready(function () {
-      //landing page background size
-      $("#home ").css({
+      // Landing page background size
+      $('#home ').css({
         'padding-top': $(window).height() / 2.2,
         'padding-bottom': $(window).height() / 1.8
 
@@ -67,7 +67,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     });
 
     $(window).resize(function(){
-      $("#home ").css({
+      $('#home ').css({
         'padding-top': $(window).height() / 2.2,
         'padding-bottom': $(window).height() / 1.8
 
