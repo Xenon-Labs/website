@@ -1,56 +1,54 @@
 @import '../../../variables.scss';
 $background-color: rgb(55, 83, 164);
 
-#home {
-    padding-top: 500px;
-    padding-bottom: 500px;
-
-    background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('/assets/images/doMoreMacOpt.jpg');
-    height: 100%;
-    background-size: cover;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-
-
-  }
- @media screen and (max-width: 992px) {
-    .landing-heading {
-        font-size: 12vw;
-        color: white;
-        text-shadow: black;
-        letter-spacing: 0.4em;
-        text-align: center;
-        margin-right: -.4em;
-        position:fixed;
-    }
-
-    #home{
-        background-attachment: relative;
-    }
- }
- @media  screen and  (min-width: 992px) {
-    .landing-heading {
-        font-size: 7vw;
-        color: white;
-        text-shadow: black;
-        letter-spacing: 0.4em;
-        text-align: center;
-        margin-right: -.4em;
-    }
-
-    #home{
-        background-attachment: fixed;
-    }
-}
-
 
 
 
 .body-wrapper {
     position: relative;
-    letter-spacing: 2px;
-    margin-right: -2px;
+
+
+    #home {
+        padding-top: 500px;
+        padding-bottom: 500px;
+        background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('/assets/images/doMoreMacOpt.jpg');
+        height: 100%;
+        background-size: cover;
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+    
+      }
+     @media screen and (max-width: 992px) {
+        .landing-heading {
+            font-size: 12vw;
+            color: white;
+            text-shadow: black;
+            letter-spacing: 0.4em;
+            text-align: center;
+            margin-right: -.4em;
+        }
+    
+        #home{
+            background-attachment: relative;
+        }
+     }
+     @media  screen and  (min-width: 992px) {
+        .landing-heading {
+            font-size: 7vw;
+            color: white;
+            text-shadow: black;
+            letter-spacing: 0.4em;
+            text-align: center;
+            margin-right: -.4em;
+        }
+    
+        #home{
+            background-attachment: fixed;
+        }
+    }
+    
 
 
     .parrallax {
