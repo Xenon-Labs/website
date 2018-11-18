@@ -11,15 +11,15 @@ export class HomeComponent implements OnInit {
   skills = [
     {
       title: 'Android Applications',
-      icon: 'fa fa-android fa-5x'
+      icon: 'fab fa-android fa-5x'
     },
     {
       title: 'iOS Applications',
-      icon: 'fa fa-apple fa-5x'
+      icon: 'fab fa-apple fa-5x'
     },
     {
       title: 'Web Applications',
-      icon: 'fa fa-code fa-5x'
+      icon: 'fas fa-code fa-5x'
     }
   ];
 
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   processes = [
     {
       title: 'Design Collaboratively',
-      icon: 'fas fa-list-ul fa-3x '
+      icon: 'fa fa-list-ul fa-3x '
     },
     {
       title: 'Build Product',
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
     },
     {
       title: 'Launch',
-      icon: 'fas fa-rocket fa-3x'
+      icon: 'fa fa-rocket fa-3x'
     }
   ];
 
