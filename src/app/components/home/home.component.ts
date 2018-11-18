@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   processes = [
     {
       title: 'Determine Requirments',
-      icon: 'fa fa-list-ul fa-3x '
+      icon: 'fas fa-list-ul fa-3x '
     },
     {
       title: 'Build Product',
@@ -40,7 +40,7 @@ export class HomeComponent implements OnInit {
     },
     {
       title: 'Launch',
-      icon: 'fa fa-rocket fa-3x'
+      icon: 'fas fa-rocket fa-3x'
     }
   ];
 
