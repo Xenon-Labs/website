@@ -42,12 +42,12 @@ export class AppComponent implements OnInit, AfterViewInit {
     // },
     {
       title: 'Facebook',
-      icon: 'fa fa-facebook-square',
+      icon: 'fab fa-facebook-square',
       link: 'https://www.facebook.com/Xenon-Labs-302160900396600/'
     },
     {
       title: 'Instagram',
-      icon: 'fa fa-instagram',
+      icon: 'fab fa-instagram',
       link: 'https://www.instagram.com/xenon_labs/'
     }
   ];
