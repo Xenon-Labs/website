@@ -11,15 +11,15 @@ export class HomeComponent implements OnInit {
   skills = [
     {
       title: 'Android Applications',
-      icon: 'fa fa-android fa-3x'
+      icon: 'fa fa-android fa-5x'
     },
     {
       title: 'iOS Applications',
-      icon: 'fa fa-apple fa-3x'
+      icon: 'fa fa-apple fa-5x'
     },
     {
       title: 'Web Applications',
-      icon: 'fa fa-code fa-3x'
+      icon: 'fa fa-code fa-5x'
     }
   ];
 
