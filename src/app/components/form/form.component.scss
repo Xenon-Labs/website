@@ -5,19 +5,27 @@
 }
 
 .bgimg-2 {
-    //  filter: brightness(25%);
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/whiteTrianglesOpt.jpg');
-    //  background-image: url('/assets/images/whiteTriangles.jpg')
   }
 
-
+  @media screen and (max-width: 992px) {
+    .parrallax{
+        background-attachment: relative;
+    }
+  }
+  @media  screen and  (min-width: 992px) {
+  
+    .parrallax{
+        background-attachment: fixed;
+    }
+  }
+  
   .parrallax {
   min-height: 100%;
   background-size: cover;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .container {
