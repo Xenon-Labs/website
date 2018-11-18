@@ -10,11 +10,9 @@
     <div class="col-md-5 footer-rs">
       <ul class="footer-rs__links">
         <li *ngFor="let link of social_links" class="footer-rs__link-item">
-          <a [href]="link.link"><span [class]="link.icon"></span></a>
-          {{link.link}}
+          <a [href]="link.link" [data-scheme]="link.uri"><span [class]="link.icon"></span></a>
         </li>
-
-        <a href="instagram://user?username=xenon_labs"> xenon</a>
+        <!-- <a href="instagram://user?username=xenon_labs"> xenon</a> -->
       </ul>
     </div>
   </div>

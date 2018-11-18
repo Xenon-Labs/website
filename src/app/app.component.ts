@@ -48,7 +48,8 @@ export class AppComponent implements OnInit, AfterViewInit {
     {
       title: 'Instagram',
       icon: 'fab fa-instagram',
-      link: 'instagram://user?username=xenon_labs'
+      link: 'https://instagram.com/xenon_labs',
+      uri: 'instagram://user?username=xenon_labs'
     }
   ];
 
