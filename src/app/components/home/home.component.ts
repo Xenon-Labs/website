@@ -19,7 +19,7 @@ export class HomeComponent implements OnInit {
     },
     {
       title: 'Web Applications',
-      icon: 'fas fa-code fa-5x'
+      icon: 'fas fa-window-maximize fa-5x'
     }
   ];
 
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   processes = [
     {
       title: 'Design Collaboratively',
-      icon: 'fa fa-list-ul fa-4x '
+      icon: 'fas fa-pencil-alt fa-4x '
     },
     {
       title: 'Build Product',
@@ -36,11 +36,11 @@ export class HomeComponent implements OnInit {
     },
     {
       title: 'Review and Test',
-      icon: 'fas fa-pencil-alt fa-4x'
+      icon: 'fas fa-screwdriver fa-4x'
     },
     {
       title: 'Launch',
-      icon: 'fa fa-rocket fa-4x'
+      icon: 'fas fa-rocket fa-4x'
     }
   ];
 
