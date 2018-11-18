@@ -28,19 +28,19 @@ export class HomeComponent implements OnInit {
   processes = [
     {
       title: 'Design Collaboratively',
-      icon: 'fa fa-list-ul fa-3x '
+      icon: 'fa fa-list-ul fa-4x '
     },
     {
       title: 'Build Product',
-      icon: 'fas fa-laptop-code fa-3x '
+      icon: 'fas fa-laptop-code fa-4x '
     },
     {
       title: 'Review and Test',
-      icon: 'fas fa-screwdriver fa-3x'
+      icon: 'fas fa-pencil-alt fa-4x'
     },
     {
       title: 'Launch',
-      icon: 'fa fa-rocket fa-3x'
+      icon: 'fa fa-rocket fa-4x'
     }
   ];
 
