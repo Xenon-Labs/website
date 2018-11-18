@@ -20,6 +20,10 @@ export class AppComponent implements OnInit, AfterViewInit {
       link: '#skills'
     },
     {
+      title: 'Our Process',
+      link: '#process'
+    },
+    {
       title: 'Contact',
       link: '#contact'
     }
