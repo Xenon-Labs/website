@@ -56,13 +56,26 @@ h2 {
   //  background-image: url('/assets/images/whiteTriangles.jpg')
 }
 
+@media screen and (max-width: 992px) {
+  .parrallax{
+      background-attachment: relative;
+  }
+}
+@media  screen and  (min-width: 992px) {
+
+  .parrallax{
+      background-attachment: fixed;
+  }
+}
+
+
 .parrallax {
   min-height: 100%;
   background-size: cover;
   position: relative;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  // background-attachment: fixed;
 }
 
 /*These styles contain basic styles for fomatting along with our animation css*/
