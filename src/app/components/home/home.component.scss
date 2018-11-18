@@ -22,10 +22,11 @@ $background-color: rgb(55, 83, 164);
         letter-spacing: 0.4em;
         text-align: center;
         margin-right: -.4em;
+        position:fixed;
     }
 
     #home{
-        background-attachment: scroll;
+        background-attachment: relative;
     }
  }
  @media  screen and  (min-width: 992px) {

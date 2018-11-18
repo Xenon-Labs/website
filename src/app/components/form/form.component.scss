@@ -4,6 +4,30 @@
     padding: 10% 0;
 }
 
+.bgimg-2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/images/whiteTrianglesOpt.jpg');
+  }
+
+  @media screen and (max-width: 992px) {
+    .parrallax{
+        background-attachment: relative;
+    }
+  }
+  @media  screen and  (min-width: 992px) {
+  
+    .parrallax{
+        background-attachment: fixed;
+    }
+  }
+  
+  .parrallax {
+  min-height: 100%;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .container {
     text-align: center;
     margin: auto;
@@ -16,10 +40,6 @@
 
 mat-form-field {
     width: 50%;
-}
-
-::ng-deep .mat-input-underline {
-    border-bottom: 1px solid black;
 }
 
 button:focus {
@@ -52,9 +72,22 @@ button:focus {
 }
 
 h2 {
+    color: white;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin-right: -0.2em;
     font-family: $font-familyReg;
     font-weight: 400;
+}
+
+.mat-input-element {
+    color: white !important;
+}
+
+.mat-form-field-label-wrapper {
+    border-bottom: solid 1px white;
+}
+
+.mat-form-field-label {
+    color: white !important;
 }
