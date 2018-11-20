@@ -34,21 +34,25 @@ export class AppComponent implements OnInit, AfterViewInit {
     //   title: 'Twitter',
     //   icon: 'fa fa-twitter-square',
     //   link: 'https://twitter.com'
+    //   uri: ''
     // },
     // {
     //   title: 'LinkedIn',
     //   icon: 'fa fa-linkedin-square',
-    //   link: 'https://linkedin.com'
+    //   link: 'https://linkedin.com',
+    //   uri: ''
     // },
     {
       title: 'Facebook',
       icon: 'fab fa-facebook-square',
-      link: 'https://www.facebook.com/Xenon-Labs-302160900396600/'
+      link: 'https://www.facebook.com/Xenon-Labs-302160900396600/',
+      uri: 'fb://302160900396600'
     },
     {
       title: 'Instagram',
       icon: 'fab fa-instagram',
-      link: 'instagram://user?username=xenon_labs'
+      link: 'https://instagram://user?username=xenon_labs',
+      uri: 'instagram://user?username=xenon_labs'
     }
   ];
 
@@ -70,7 +74,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
     });
 
-    $(window).resize(function(){
+    $(window).resize(function() {
       $('#home ').css({
         'padding-top': $(window).height() / 2.2,
         'padding-bottom': $(window).height() / 1.8
