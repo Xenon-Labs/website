@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
+import { DeviceDetectorModule } from 'ngx-device-detector';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './libs/material.module';
 import { HomeComponent } from './components/home/home.component';
@@ -25,7 +25,8 @@ import { ProcessComponent } from './components/process/process.component';
   imports: [
     BrowserModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    DeviceDetectorModule.forRoot()
   ],
   providers: [],
   exports: [
